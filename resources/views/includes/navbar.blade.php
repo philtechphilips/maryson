@@ -1,8 +1,8 @@
-<header class="w-full bg-white py-3 px-20">
+<header class="w-full bg-white py-3 md:px-20 px-5">
 <nav class="w-full flex items-center justify-between">
     <img src="{{ asset("assets/logo.png")}}" class="w-40"></img>
 
-    <ul class="flex gap-10 items-center">
+    <ul class="md:flex hidden gap-10 items-center">
         <li>
             <a href="/" class="uppercase underline text-sm text-[#434343] leading-6 py-2"> Home</a>
         </li>
