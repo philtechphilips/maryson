@@ -59,6 +59,38 @@
                     solutions, we are committed to achieving superior operational outcomes that bring our client’s projects
                     to reality. Our focused service areas are:</p>
             </div>
+
+            <div class="py-24 flex md:flex-row flex-col gap-6 items-center homepage-services-body-image">
+                <div class="w-full md:w-[408px] h-[460px] bg-center bg-cover bg-no-repeat rounded-3xl relative"
+                    style="background-image: url('{{ asset('assets/04aeca0c-5239-4108-b3bf-5b5f2a115b13 1.png') }}">
+                    <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Energy</h2>
+                    <div class="homepage-services-body-image-img"></div>
+                    <a href="/services" onmouseover="changeIcon('other', true)" onmouseout="changeIcon('other', false)">
+                        <p class="font-bold" style="color: #fff;">See more</p>
+                        <i class="ri-arrow-right-double-fill" id="icon-other"></i>
+                    </a>
+                </div>
+
+                <div class="w-full md:w-[408px] h-[460px] bg-center bg-cover bg-no-repeat rounded-3xl relative"
+                    style="background-image: url('{{ asset('assets/keep this in project portfolio.png') }}">
+                    <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Energy</h2>
+                    <div class="homepage-services-body-image-img"></div>
+                    <a href="/services" onmouseover="changeIcon('other', true)" onmouseout="changeIcon('other', false)">
+                        <p class="font-bold" style="color: #fff;">See more</p>
+                        <i class="ri-arrow-right-double-fill" id="icon-other"></i>
+                    </a>
+                </div>
+
+                <div class="w-full md:w-[408px] h-[460px] bg-center bg-cover bg-no-repeat rounded-3xl relative"
+                    style="background-image: url('{{ asset('assets/IMG_2806 1.png') }}">
+                    <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Energy</h2>
+                    <div class="homepage-services-body-image-img"></div>
+                    <a href="/services" onmouseover="changeIcon('other', true)" onmouseout="changeIcon('other', false)">
+                        <p class="font-bold" style="color: #fff;">See more</p>
+                        <i class="ri-arrow-right-double-fill" id="icon-other"></i>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <section class="w-full md:px-20 px-5 md:py-24 py-16">
@@ -72,4 +104,18 @@
             </div>
         </section>
     </div>
+@endsection
+
+
+@section('script')
+    <script>
+        const changeIcon = (serviceType, isHovering) => {
+            const icon = document.getElementById('icon-' + serviceType);
+            if (isHovering) {
+                icon.className = 'ri-arrow-right-line';
+            } else {
+                icon.className = 'ri-arrow-right-double-fill';
+            }
+        }
+    </script>
 @endsection
