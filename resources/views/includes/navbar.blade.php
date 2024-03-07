@@ -2,25 +2,30 @@
     <nav class="w-full flex items-center justify-between">
         <img src="{{ asset('assets/logo.png') }}" class="w-40"></img>
 
-        <ul class="md:flex hidden gap-10 items-center">
+        <ul class="md:flex hidden gap-10 items-center list">
             <li>
-                <a href="/" class="uppercase underline text-sm text-[#434343] pb-4"> Home</a>
+                <a href="/" class="uppercase font-medium text-sm text-[#434343] leading-6 py-2"> Home</a>
+                <div class="w-full h-[1px] bg-[#434343]"></div>
             </li>
 
             <li>
-                <a href="/about-us" class="uppercase underline text-sm text-[#434343] leading-6 py-2"> About</a>
+                <a href="/about-us" class="uppercase font-medium text-sm text-[#434343] leading-6 py-2"> About</a>
+                <div class="w-full h-[1px] bg-[#434343]"></div>
             </li>
 
             <li>
-                <a href="/services" class="uppercase underline text-sm text-[#434343] leading-6 py-2"> Services</a>
+                <a href="/services" class="uppercase font-medium text-sm text-[#434343] leading-6 py-2"> Services</a>
+                <div class="w-full h-[1px] bg-[#434343]"></div>
             </li>
 
             <li>
-                <a href="/projects" class="uppercase underline text-sm text-[#434343] leading-6 py-2"> Projects </a>
+                <a href="/projects" class="uppercase font-medium text-sm text-[#434343] leading-6 py-2"> Projects </a>
+                <div class="w-full h-[1px] bg-[#434343]"></div>
             </li>
 
             <li>
-                <a href="/teams" class="uppercase underline text-sm text-[#434343] leading-6 py-2"> Our Team</a>
+                <a href="/teams" class="uppercase font-medium text-sm text-[#434343] leading-6 py-2"> Our Team</a>
+                <div class="w-full h-[1px] bg-[#434343]"></div>
             </li>
         </ul>
 

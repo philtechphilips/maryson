@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <title>{{ getenv('APP_NAME') }} | Gas Energy - Power Energy - Others</title>
@@ -12,11 +13,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset("styles/global.css")}}">
-    <link rel="icon" type="image/png" href="{{ asset("assets/images/Maryson Logo.png") }}" sizes="any">
+    <link rel="stylesheet" href="{{ asset('styles/global.css') }}">
+    <link rel="icon" type="image/png" href="{{ asset('assets/icon.png') }}" sizes="any">
     @vite('resources/css/app.css')
- <!-- Styles -->
+    <!-- Styles -->
 </head>
+
 <body>
     <div id="app">
         <main class="">
@@ -26,6 +28,21 @@
         </main>
     </div>
 
+    <script>
+    var currentPage = window.location.pathname;
+    
+document.querySelectorAll('.list li').forEach(function(li) {
+   
+    var link = li.querySelector('a');
+console.log(link)
+    if (link.getAttribute('href') === currentPage) {
+        li.querySelector('div').style.display = 'block';
+    } else {
+        li.querySelector('div').style.display = 'none';
+    }
+});
+    </script>
     @yield('script')
 </body>
+
 </html>
