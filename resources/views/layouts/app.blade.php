@@ -28,20 +28,38 @@
         </main>
     </div>
 
+    {{-- Active Page --}}
     <script>
-    var currentPage = window.location.pathname;
-    
-document.querySelectorAll('.list li').forEach(function(li) {
-   
-    var link = li.querySelector('a');
-console.log(link)
-    if (link.getAttribute('href') === currentPage) {
-        li.querySelector('div').style.display = 'block';
-    } else {
-        li.querySelector('div').style.display = 'none';
-    }
-});
+        var currentPage = window.location.pathname;
+
+        document.querySelectorAll('.list li').forEach(function(li) {
+
+            var link = li.querySelector('a');
+            console.log(link)
+            if (link.getAttribute('href') === currentPage) {
+                li.querySelector('div').style.display = 'block';
+            } else {
+                li.querySelector('div').style.display = 'none';
+            }
+        });
     </script>
+    {{-- Active Page --}}
+
+    {{-- Toggle Desktop Sidebar  --}}
+    <script>
+        const toggleButtons = document.querySelectorAll('.toggleButton');
+        const hiddenDiv = document.getElementById('hiddenDiv');
+        const sideBar = document.getElementById('sideBar');
+    
+        toggleButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            hiddenDiv.classList.toggle('hidden');
+            // sideBar.classList.toggle('hidden');
+            sideBar.classList.toggle('translate-x-[500px]'); 
+        })
+    });
+    </script>    
+    {{-- Toggle Desktop Sidebar --}}
     @yield('script')
 </body>
 

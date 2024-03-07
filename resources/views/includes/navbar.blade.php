@@ -29,17 +29,17 @@
             </li>
         </ul>
 
-        <img class="w-8 cursor-pointer"
+        <img class="w-8 cursor-pointer toggleButton"
             src="{{ asset('assets/streamline_interface-setting-menu-parallel-hamburger-circle-navigation-parallel-hamburger-buttonmenu-circle.png') }}">
     </nav>
 </header>
 
-{{-- 
-<div class="w-full fixed top-0 bg-black bg-opacity-50 z-50 h-screen left-0"></div>
-<div class="w-full md:w-[406px] bg-white z-[1000] fixed top-0 rounded-3xl right-10 p-10 h-screen">
+
+<div id="hiddenDiv" class="w-full hidden toggleButton fixed top-0 bg-black bg-opacity-50 z-50 h-screen left-0"></div>
+<div id="sideBar" class="w-full md:w-[406px] bg-white z-[1000] fixed top-0 rounded-3xl right-10 p-10 h-screen  translate-x-[500px] duration-[300ms] ease-in transform">
     <div class="cursor-pointer pb-10 flex justify-end">
         <img src=" {{ asset('assets/streamline_interface-setting-menu-parallel-hamburger-circle-navigation-parallel-hamburger-buttonmenu-circle.svg') }}"
-            class="w-8">
+            class="w-8 toggleButton">
     </div>
     <img src=" {{ asset('assets/logo.png') }}" class="w-32">
     <p class="text-sm text-[#434343] pt-4 pr-10">Maryson Energy Limited is an indigenous integrated energy and
@@ -79,4 +79,4 @@
             </div>
         </div>
     </div>
-</div> --}}
+</div>
