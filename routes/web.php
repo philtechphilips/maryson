@@ -24,3 +24,11 @@ Route::get('/about-us', function () {
 Route::get('/services', function () {
     return view('service');
 });
+
+Route::get('/projects', function () {
+    return view('projects');
+});
+
+Route::get('/teams', function () {
+    return view('teams');
+});
