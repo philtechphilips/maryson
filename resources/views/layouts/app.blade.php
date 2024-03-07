@@ -60,6 +60,19 @@
     });
     </script>    
     {{-- Toggle Desktop Sidebar --}}
+
+      {{-- Toggle Mobile Navigation  --}}
+      <script>
+        const toggleButton = document.querySelectorAll('.menuButton');
+        const menu = document.getElementById('menu');
+    
+        toggleButton.forEach(function(button) {
+        button.addEventListener('click', function() {
+            menu.classList.toggle('translate-x-[500px]'); 
+        })
+    });
+    </script>    
+    {{-- Toggle Mobile Navigation --}}
     @yield('script')
 </body>
 
