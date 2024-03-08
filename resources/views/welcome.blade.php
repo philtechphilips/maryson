@@ -9,10 +9,10 @@
                 <p class="text-white font-[Rubik] flex gap-2"><span
                         class="tracking-[-3px] hidden md:flex">____________________</span> Energy - Engineering -
                     Project<span class="hidden md:block tracking-[-3px]">____________________</span></p>
-                <h1 class="text-white font-bold md:text-5xl text-4xl uppercase text-center md:px-[400px] md:leading-[65px]">
+                <h1 class="text-white font-bold md:text-5xl text-4xl swiper-animate-one uppercase text-center md:px-[400px] md:leading-[65px]">
                     Gas Delivery
                     Solutions</h1>
-                <p class="text-white text-lg md:px-64 text-center">- Transporting energy via pipelines and specialized
+                <p class="text-white text-lg md:px-64 text-center swiper-animate-one">- Transporting energy via pipelines and specialized
                     containers
                     providing improved cost efficiency.</p>
             </div>
@@ -26,7 +26,7 @@
                 <h1
                     class="text-white font-bold swiper-animate md:text-5xl text-4xl uppercase text-center md:px-[300px] md:leading-[65px]">
                     Power Infrastructure Development</h1>
-                <p class="text-white text-lg md:px-64 text-center">- Building infrastructure to support growing and
+                <p class="text-white text-lg md:px-64 text-center swiper-animate">- Building infrastructure to support growing and
                     sustainable power distribution</p>
             </div>
 
@@ -36,10 +36,10 @@
                 <p class="text-white font-[Rubik] flex gap-2"><span
                         class="tracking-[-3px] hidden md:flex">____________________</span> Energy - Engineering -
                     Project<span class="hidden md:block tracking-[-3px]">____________________</span></p>
-                <h1 class="text-white font-bold md:text-5xl text-4xl uppercase text-center md:px-[200px] md:leading-[65px]">
+                <h1 class="text-white font-bold md:text-5xl text-4xl swiper-animate-two uppercase text-center md:px-[200px] md:leading-[65px]">
                     Illuminating
                     the City and Directional Drilling Services</h1>
-                <p class="text-white text-lg md:px-64 text-center">- Lighting our city roads through renewable and
+                <p class="text-white text-lg md:px-64 text-center swiper-animate-two">- Lighting our city roads through renewable and
                     conventional power. Directional drilling for energy transportation and supply.</p>
             </div>
         </div>
@@ -167,16 +167,30 @@
         });
 
         swiper.on('slideChange', function() {
-            console.log("Changed")
+    
+            document.querySelectorAll('.swiper-animate').forEach(function(element) {
+                element.classList.remove('animate');
+            });
 
-            document.querySelectorAll('.animate-slide').forEach(function(element) {
+            document.querySelectorAll('.swiper-animate-one').forEach(function(element) {
+                element.classList.remove('animate');
+            });
+
+            document.querySelectorAll('.swiper-animate-two').forEach(function(element) {
                 element.classList.remove('animate');
             });
 
             var activeSlide = swiper.slides[swiper.activeIndex];
 
+            activeSlide.querySelectorAll('.swiper-animate').forEach(function(element) {
+                element.classList.add('animate');
+            });
 
-            activeSlide.querySelectorAll('.animate-slide').forEach(function(element) {
+            activeSlide.querySelectorAll('.swiper-animate-one').forEach(function(element) {
+                element.classList.add('animate');
+            });
+
+            activeSlide.querySelectorAll('.swiper-animate-two').forEach(function(element) {
                 element.classList.add('animate');
             });
         });
