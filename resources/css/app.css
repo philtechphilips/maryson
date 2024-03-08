@@ -43,3 +43,15 @@
 .header-shadow{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.swiper-pagination-bullet-active {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: var(--ligth-purple-color) !important;
+}
+
+.swiper .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: #fff !important;
+}

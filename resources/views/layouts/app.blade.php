@@ -13,6 +13,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
     <link rel="stylesheet" href="{{ asset('styles/global.css') }}">
     <link rel="icon" type="image/png" href="{{ asset('assets/icon.png') }}" sizes="any">
     @vite('resources/css/app.css')
@@ -73,6 +77,11 @@
     });
     </script>    
     {{-- Toggle Mobile Navigation --}}
+
+    {{-- Swiper JS --}}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    {{-- Swiper JS --}}
     @yield('script')
 </body>
 
