@@ -9,10 +9,12 @@
                 <p class="text-white font-[Rubik] flex gap-2"><span
                         class="tracking-[-3px] hidden md:flex">____________________</span> Energy - Engineering -
                     Project<span class="hidden md:block tracking-[-3px]">____________________</span></p>
-                <h1 class="text-white font-bold md:text-5xl text-4xl swiper-animate-one uppercase text-center md:px-[400px] md:leading-[65px]">
+                <h1
+                    class="text-white font-bold md:text-5xl text-4xl swiper-animate-one uppercase text-center md:px-[400px] md:leading-[65px]">
                     Gas Delivery
                     Solutions</h1>
-                <p class="text-white text-lg md:px-64 text-center swiper-animate-one">- Transporting energy via pipelines and specialized
+                <p class="text-white text-lg md:px-64 text-center swiper-animate-one">- Transporting energy via pipelines and
+                    specialized
                     containers
                     providing improved cost efficiency.</p>
             </div>
@@ -26,7 +28,8 @@
                 <h1
                     class="text-white font-bold swiper-animate md:text-5xl text-4xl uppercase text-center md:px-[300px] md:leading-[65px]">
                     Power Infrastructure Development</h1>
-                <p class="text-white text-lg md:px-64 text-center swiper-animate">- Building infrastructure to support growing and
+                <p class="text-white text-lg md:px-64 text-center swiper-animate">- Building infrastructure to support
+                    growing and
                     sustainable power distribution</p>
             </div>
 
@@ -36,10 +39,12 @@
                 <p class="text-white font-[Rubik] flex gap-2"><span
                         class="tracking-[-3px] hidden md:flex">____________________</span> Energy - Engineering -
                     Project<span class="hidden md:block tracking-[-3px]">____________________</span></p>
-                <h1 class="text-white font-bold md:text-5xl text-4xl swiper-animate-two uppercase text-center md:px-[200px] md:leading-[65px]">
+                <h1
+                    class="text-white font-bold md:text-5xl text-4xl swiper-animate-two uppercase text-center md:px-[200px] md:leading-[65px]">
                     Illuminating
                     the City and Directional Drilling Services</h1>
-                <p class="text-white text-lg md:px-64 text-center swiper-animate-two">- Lighting our city roads through renewable and
+                <p class="text-white text-lg md:px-64 text-center swiper-animate-two">- Lighting our city roads through
+                    renewable and
                     conventional power. Directional drilling for energy transportation and supply.</p>
             </div>
         </div>
@@ -93,8 +98,8 @@
                 to reality. Our focused service areas are:</p>
         </div>
 
-        <div class="py-24 flex md:flex-row flex-col gap-6 items-center homepage-services-body-image">
-            <div class="w-full md:w-[408px] h-[460px] bg-center bg-cover bg-no-repeat rounded-3xl relative"
+        <div class="py-24 flex md:flex-row flex-col gap-6 items-center">
+            <div class="w-full md:w-[408px] h-[460px] bg-center bg-cover bg-no-repeat rounded-3xl relative  homepage-services-body-image"
                 style="background-image: url('{{ asset('assets/04aeca0c-5239-4108-b3bf-5b5f2a115b13 1.png') }}">
                 <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Energy</h2>
                 <div class="homepage-services-body-image-img"></div>
@@ -104,9 +109,9 @@
                 </a>
             </div>
 
-            <div class="w-full md:w-[408px] h-[460px] bg-center bg-cover bg-no-repeat rounded-3xl relative"
+            <div class="w-full md:w-[408px] h-[460px] bg-center bg-cover bg-no-repeat rounded-3xl relative  homepage-services-body-image"
                 style="background-image: url('{{ asset('assets/keep this in project portfolio.png') }}">
-                <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Energy</h2>
+                <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Engineering</h2>
                 <div class="homepage-services-body-image-img"></div>
                 <a href="/services" onmouseover="changeIcon('other', true)" onmouseout="changeIcon('other', false)">
                     <p class="font-bold" style="color: #fff;">See more</p>
@@ -114,9 +119,9 @@
                 </a>
             </div>
 
-            <div class="w-full md:w-[408px] h-[460px] bg-center bg-cover bg-no-repeat rounded-3xl relative"
+            <div class="w-full md:w-[408px] h-[460px] bg-center bg-cover bg-no-repeat rounded-3xl relative homepage-services-body-image"
                 style="background-image: url('{{ asset('assets/IMG_2806 1.png') }}">
-                <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Energy</h2>
+                <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Projects</h2>
                 <div class="homepage-services-body-image-img"></div>
                 <a href="/services" onmouseover="changeIcon('other', true)" onmouseout="changeIcon('other', false)">
                     <p class="font-bold" style="color: #fff;">See more</p>
@@ -167,7 +172,7 @@
         });
 
         swiper.on('slideChange', function() {
-    
+
             document.querySelectorAll('.swiper-animate').forEach(function(element) {
                 element.classList.remove('animate');
             });
