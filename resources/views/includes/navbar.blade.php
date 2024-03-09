@@ -37,7 +37,7 @@
 </header>
 {{-- Desktop navigation --}}
 
-<nav id="menu" class="w-full p-5 md:hidden bg-gray-100 h-screen fixed top-0 translate-x-[500px] duration-[300ms] ease-in transform">
+<nav id="menu" class="w-full p-5 md:hidden bg-gray-100 h-screen fixed top-0 translate-x-[500px] duration-[300ms] ease-in transform z-[1000]">
     <div class="flex items-center justify-between mb-20">
         <img src="{{ asset('assets/logo.png') }}" class="w-40"></img>
         

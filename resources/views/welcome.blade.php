@@ -3,7 +3,7 @@
 @section('content')
     <section class="w-full  md:h-screen swiper">
         <div class="swiper-wrapper">
-            <div class="w-full  swiper-slide md:h-screen h-[700px] py-44 md:py-0 flex flex-col md:gap-4 gap-2 items-center justify-center bg-center bg-cover bg-no-repeat"
+            <div class="w-full  swiper-slide md:h-screen h-[700px] py-44 md:py-0 flex flex-col md:gap-4 gap-2 px-5 items-center justify-center bg-center bg-cover bg-no-repeat"
                 style="background-image: url('{{ asset('assets/04aeca0c-5239-4108-b3bf-5b5f2a115b13 1.png') }}')">
 
                 <p class="text-white font-[Rubik] flex gap-2"><span
@@ -19,7 +19,7 @@
                     providing improved cost efficiency.</p>
             </div>
 
-            <div class="w-full  swiper-slide md:h-screen h-[700px] py-44 md:py-0 flex flex-col md:gap-4 gap-2 items-center justify-center bg-center bg-cover bg-no-repeat"
+            <div class="w-full  swiper-slide md:h-screen h-[700px] py-44 md:py-0 flex flex-col px-5 md:gap-4 gap-2 items-center justify-center bg-center bg-cover bg-no-repeat"
                 style="background-image: url('{{ asset('assets/IMG_2806 1.png') }}')">
 
                 <p class="text-white font-[Rubik] flex gap-2"><span
@@ -103,9 +103,9 @@
                 style="background-image: url('{{ asset('assets/04aeca0c-5239-4108-b3bf-5b5f2a115b13 1.png') }}">
                 <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Energy</h2>
                 <div class="homepage-services-body-image-img"></div>
-                <a href="/services" onmouseover="changeIcon('other', true)" onmouseout="changeIcon('other', false)">
+                <a href="/services" onmouseover="changeIcon('icon-other-1', true)" onmouseout="changeIcon('icon-other-1', false)">
                     <p class="font-bold" style="color: #fff;">See more</p>
-                    <i class="ri-arrow-right-double-fill" id="icon-other"></i>
+                    <i class="ri-arrow-right-double-fill icon-other" id="icon-other-1"></i>
                 </a>
             </div>
 
@@ -113,9 +113,9 @@
                 style="background-image: url('{{ asset('assets/keep this in project portfolio.png') }}">
                 <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Engineering</h2>
                 <div class="homepage-services-body-image-img"></div>
-                <a href="/services" onmouseover="changeIcon('other', true)" onmouseout="changeIcon('other', false)">
+                <a href="/services" onmouseover="changeIcon('icon-other-2', true)" onmouseout="changeIcon('icon-other-2', false)">
                     <p class="font-bold" style="color: #fff;">See more</p>
-                    <i class="ri-arrow-right-double-fill" id="icon-other"></i>
+                    <i class="ri-arrow-right-double-fill icon-other" id="icon-other-2"></i>
                 </a>
             </div>
 
@@ -123,9 +123,9 @@
                 style="background-image: url('{{ asset('assets/IMG_2806 1.png') }}">
                 <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Projects</h2>
                 <div class="homepage-services-body-image-img"></div>
-                <a href="/services" onmouseover="changeIcon('other', true)" onmouseout="changeIcon('other', false)">
+                <a href="/services" onmouseover="changeIcon('icon-other-3', true)" onmouseout="changeIcon('icon-other-3', false)">
                     <p class="font-bold" style="color: #fff;">See more</p>
-                    <i class="ri-arrow-right-double-fill" id="icon-other"></i>
+                    <i class="ri-arrow-right-double-fill icon-other" id="icon-other-3"></i>
                 </a>
             </div>
         </div>
@@ -136,16 +136,18 @@
 
 
 @section('script')
-    <script>
-        const changeIcon = (serviceType, isHovering) => {
-            const icon = document.getElementById('icon-' + serviceType);
-            if (isHovering) {
-                icon.className = 'ri-arrow-right-line';
-            } else {
-                icon.className = 'ri-arrow-right-double-fill';
-            }
+<script>
+    const changeIcon = (iconId, isHovering) => {
+        const icon = document.getElementById(iconId);
+        if (isHovering) {
+            icon.classList.remove('ri-arrow-right-double-fill');
+            icon.classList.add('ri-arrow-right-line');
+        } else {
+            icon.classList.remove('ri-arrow-right-line');
+            icon.classList.add('ri-arrow-right-double-fill');
         }
-    </script>
+    }
+</script>
 
     <script>
         const swiper = new Swiper('.swiper', {
