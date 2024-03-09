@@ -88,3 +88,7 @@
 .swiper-animate-one.animate {
     opacity: 1;
 }
+
+.category-btn.active {
+    color: #0000FE !important;
+}
