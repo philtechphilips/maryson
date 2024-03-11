@@ -56,6 +56,6 @@
         </div>
     </div>
     <div class="w-full text-center bg-[#F2F2F2] py-5">
-        <p class="text-sm text-[#8E8E8E]">Copyright 2023 Maryson Energy.All right reserved</p>
+        <p class="text-sm text-[#8E8E8E]">Copyright {{ date('Y') }} Maryson Energy.All right reserved</p>
     </div>
 </footer>

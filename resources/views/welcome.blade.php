@@ -98,7 +98,7 @@
                 to reality. Our focused service areas are:</p>
         </div>
 
-        <div class="py-24 flex md:flex-row flex-col gap-6 items-center">
+        <div class="py-24 flex md:flex-row flex-col gap-6 items-center justify-center">
             <div class="w-full md:w-[408px] h-[460px] bg-center bg-cover bg-no-repeat rounded-3xl relative  homepage-services-body-image"
                 style="background-image: url('{{ asset('assets/04aeca0c-5239-4108-b3bf-5b5f2a115b13 1.png') }}">
                 <h2 class="text-white absolute top-10 left-10 text-2xl font-bold">Energy</h2>

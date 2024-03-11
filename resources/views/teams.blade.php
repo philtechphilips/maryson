@@ -113,7 +113,7 @@
                 <div class="md:w-[340px] w-full border-2 border-[#D2D2D2] rounded-3xl border-opacity-30 main">
                     <img src="{{ asset('assets/lydia.png') }}" class="md:w-[340px] w-full">
                     <h1 class="text-[#1D1D1D] text-lg text-center mt-6 font-medium">Idowu Lydia Folashade</h1>
-                    <h1 class="text-[#1D1D1D] mt-2 mb-12 text-center font-bold">Member</h1>
+                    <h1 class="text-[#1D1D1D] mt-2 mb-12 text-center font-bold">Head of Account</h1>
                 </div>
                 <div class="md:w-[340px] h-[475px] w-full shadow-md rounded-3xl border-opacity-30 sub">
                     <p class="text-[#777777] text-center pt-16 p-5">A member of the Association of Accounting Technicians

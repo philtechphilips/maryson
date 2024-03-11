@@ -2,7 +2,7 @@
 
 @section('content')
     <section class="bg-[#FFFFFF] py-28 md:px-20 px-5">
-        <div class="md:px-16 px-5 flex md:flex-row flex-col items-center gap-4 mb-6">
+        <div class="md:px-16 px-5 flex md:flex-row flex-col items-center justify-center gap-4 mb-6">
             <div class="flex flex-col gap-2 md:w-[480px] w-full">
                 <h1 class="text-[#1d1d1d] md:text-[40px] text-3xl text-center md:text-left font-bold uppercase">About Us
                 </h1>
@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="md:px-8 pt-10 flex md:flex-row flex-col items-start justify-between gap-14">
+        <div class="md:px-8 pt-10 flex md:flex-row flex-col items-start justify-center gap-14">
             <div class="flex flex-col gap-2 px-6 py-10 border border-[#E5E5E5] rounded-3xl md:w-[300px] w-full">
                 <img src="{{ asset('assets/fluent_target-arrow-16-regular.svg') }}" class="mb-4 w-8">
                 <h1 class="uppercase font-bold text-2xl text-[#1D1D1D]">Our mission</h1>
@@ -50,7 +50,7 @@
     </section>
 
 
-    <section class="bg-[#F2F2F2] py-28 flex md:flex-row flex-col gap-24 items-center md:px-40 px-5">
+    <section class="bg-[#F2F2F2] py-28 flex md:flex-row flex-col justify-center gap-24 items-center md:px-40 px-5">
         <div class="md:w-[500px] w-full">
             <img src="{{ asset('assets/e15dcf1c-6b30-44f3-8dd8-7469d96857b2.png') }}" class="w-[500px]">
         </div>
