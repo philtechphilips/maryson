@@ -1,7 +1,9 @@
 {{-- Desktop navigation --}}
 <header class="w-full bg-white py-3 md:px-20 px-5 header-shadow z-[1000] mb-[2px]">
     <nav class="w-full flex items-center justify-between">
-        <img src="{{ asset('assets/logo.png') }}" class="w-40"></img>
+        <a href="/" class="cursor-pointer">
+            <img src="{{ asset('assets/logo.png') }}" class="w-40"></img>
+        </a>
 
         <ul class="md:flex hidden gap-10 items-center list">
             <li>
@@ -30,22 +32,27 @@
             </li>
         </ul>
 
-        <img class="w-8 cursor-pointer toggleButton md:flex hidden"
-            src="{{ asset('assets/streamline_interface-setting-menu-parallel-hamburger-circle-navigation-parallel-hamburger-buttonmenu-circle.png') }}">
-            <i class="ri-menu-2-line md:hidden flex text-2xl menuButton"></i>
-        </nav>
+
+        <img class="w-8 cursor-pointer toggleButton md:flex hidden real-icon"
+            src="{{ asset('assets/streamline_interface-setting-menu-parallel-hamburger-circle-navigation-parallel-hamburger-buttonmenu-circle.svg') }}">
+
+        <i class="ri-menu-2-line md:hidden flex text-2xl menuButton"></i>
+    </nav>
 </header>
 {{-- Desktop navigation --}}
 
-<nav id="menu" class="w-full p-5 md:hidden bg-gray-100 h-screen fixed top-0 translate-x-[500px] duration-[300ms] ease-in transform z-[1000]">
+<nav id="menu"
+    class="w-full p-5 md:hidden bg-gray-100 h-screen fixed top-0 translate-x-[500px] duration-[300ms] ease-in transform z-[1000]">
     <div class="flex items-center justify-between mb-20">
-        <img src="{{ asset('assets/logo.png') }}" class="w-40"></img>
-        
+        <a href="/" class="cursor-pointer">
+            <img src="{{ asset('assets/logo.png') }}" class="w-40"></img>
+        </a>
+
         <div class="w-10 h-10 menuButton border-[#000] flex items-center justify-center rounded-full border-2 solid">
             <i class="ri-close-line text-3xl"></i>
         </div>
     </div>
-    
+
     <ul class="flex flex-col gap-10 items-center list">
         <li>
             <a href="/" class="uppercase font-medium text-xl text-[#434343] leading-6 py-2"> Home</a>
@@ -73,12 +80,12 @@
         </li>
 
         <li class="flex gap-2 items-center bg-[#e5e5fd] rounded-lg px-6 py-3">
-                <img src="{{ asset('assets/fluent_call-24-regular.svg') }}"></img>
-                <p class="text-[#434343] font-medium md:text-xl">+234 (0) 810 145 5810</p>
+            <img src="{{ asset('assets/fluent_call-24-regular.svg') }}"></img>
+            <p class="text-[#434343] font-medium md:text-xl">+234 (0) 810 145 5810</p>
         </li>
     </ul>
 
-    </nav>
+</nav>
 
 {{-- Mobile Sidebar --}}
 
@@ -86,7 +93,7 @@
 <div id="sideBar"
     class="w-full md:w-[406px] bg-white z-[1000] fixed top-0 rounded-3xl right-10 p-10 h-screen  translate-x-[500px] duration-[300ms] ease-in transform">
     <div class="cursor-pointer pb-10 flex justify-end">
-        <img src=" {{ asset('assets/streamline_interface-setting-menu-parallel-hamburger-circle-navigation-parallel-hamburger-buttonmenu-circle.svg') }}"
+        <img class="w-8 cursor-pointer toggleButton md:flex hidden" src="{{ asset('assets/blueicon.svg') }}"
             class="w-8 toggleButton">
     </div>
     <img src=" {{ asset('assets/logo.png') }}" class="w-32">

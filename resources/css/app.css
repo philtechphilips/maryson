@@ -92,3 +92,12 @@
 .category-btn.active {
     color: #0000FE !important;
 }
+
+.sub {
+    display: none; 
+}
+
+
+.hover-icon {
+    display: none !important;
+}
