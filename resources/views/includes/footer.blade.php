@@ -12,19 +12,19 @@
             <h1 class="text-[#1D1D1D] font-bold text-xl mb-4">QUICK LINKS</h1>
             <ul class="flex flex-col gap-4">
                 <li>
-                    <a href="#" class="text-[#434343]">About</a>
+                    <a href="/about-us" class="text-[#434343]">About</a>
                 </li>
 
                 <li>
-                    <a href="#" class="text-[#434343]">Services</a>
+                    <a href="/services" class="text-[#434343]">Services</a>
                 </li>
 
                 <li>
-                    <a href="#" class="text-[#434343]">Projects</a>
+                    <a href="/projects" class="text-[#434343]">Projects</a>
                 </li>
 
                 <li>
-                    <a href="#" class="text-[#434343]">Our Team</a>
+                    <a href="/teams" class="text-[#434343]">Our Team</a>
                 </li>
             </ul>
         </div>
