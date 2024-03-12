@@ -8,7 +8,7 @@
 
                 <p class="text-white font-[Rubik] flex gap-2"><span
                         class="tracking-[-3px] hidden md:flex">____________________</span> Energy - Engineering -
-                    Project<span class="hidden md:block tracking-[-3px]">____________________</span></p>
+                    Projects<span class="hidden md:block tracking-[-3px]">____________________</span></p>
                 <h1
                     class="text-white font-bold md:text-5xl text-4xl swiper-animate-one uppercase text-center md:px-[400px] md:leading-[65px]">
                     Gas Delivery
