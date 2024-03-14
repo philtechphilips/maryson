@@ -91,7 +91,7 @@
 
     <section class="bg-[#F2F2F2] py-28 md:px-20 px-5">
         <div class="w-full flex flex-col gap-2 items-center justify-center">
-            <h1 class="text-[#1d1d1d] md:text-4xl text-3xl font-bold uppercase text-center">OUR SERVICE</h1>
+            <h1 class="text-[#1d1d1d] md:text-4xl text-3xl font-bold uppercase text-center">OUR SERVICES</h1>
             <p class="text-[#434343] text-center md:px-28 text-sm md:text-[16px] leading-6">As a leading provider of
                 integrated energy and engineering
                 solutions, we are committed to achieving superior operational outcomes that bring our client’s projects
