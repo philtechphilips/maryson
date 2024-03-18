@@ -45,11 +45,13 @@
                 class="w-full 2xl:w-[438px] 2xl:h-[435px] project md:w-[350px] md:h-[355px] relative overflow-hidden rounded-3xl">
                 <img class=" hover:scale-110 transition-[300ms] w-full 2xl:w-[438px] 2xl:h-[435px] md:w-[350px] md:h-[435px]"
                     src="{{ asset('assets/project 3.png') }}">
-                {{-- <div class="hidden cursor-pointer items-center w-full px-4 justify-center absolute bottom-5 details transition delay-[1]">
-                        <p class="text-white bg-[#333333] bg-opacity-80 px-4 py-3 w-full rounded-lg text-xs">
-                            Copper Bus Bar Panel installation at Data Centre at Oregun Lagos State 
-                        </p>
-                    </div> --}}
+                <div
+                    class="hidden cursor-pointer items-center w-full px-4 justify-center absolute bottom-5 details transition delay-[1]">
+                    <p class="text-white bg-[#333333] bg-opacity-80 px-4 py-3 w-full rounded-lg text-xs">
+                        Gas distribution pipeline connection at Plastic manufacturing factory at Oshodi-Apapa Expressway,
+                        Lagos State
+                    </p>
+                </div>
             </div>
 
             <div data-category="Power projects" onmouseover="showDetails(this)" onmouseout="hideDetails(this)"
@@ -310,7 +312,7 @@
                 <div
                     class="hidden cursor-pointer items-center w-full px-4 justify-center absolute bottom-5 details transition delay-[1]">
                     <p class="text-white bg-[#333333] bg-opacity-80 px-4 py-3 w-full rounded-lg text-xs">
-                        Internal Piping Installation for Data Centre at Oregun, Lagos State. 
+                        Internal Piping Installation for Data Centre at Oregun, Lagos State.
                     </p>
                 </div>
             </div>
@@ -323,7 +325,7 @@
                 <div
                     class="hidden cursor-pointer items-center w-full px-4 justify-center absolute bottom-5 details transition delay-[1]">
                     <p class="text-white bg-[#333333] bg-opacity-80 px-4 py-3 w-full rounded-lg text-xs">
-                        Internal Piping Installation for Data Centre at Oregun, Lagos State. 
+                        Internal Piping Installation for Data Centre at Oregun, Lagos State.
                     </p>
                 </div>
             </div>
@@ -336,7 +338,8 @@
                 <div
                     class="hidden cursor-pointer items-center w-full px-4 justify-center absolute bottom-5 details transition delay-[1]">
                     <p class="text-white bg-[#333333] bg-opacity-80 px-4 py-3 w-full rounded-lg text-xs">
-                        Horizontal Directional Drilling (HDD) services for state-owned Electricity Distribution company in Cotonou, Benin Republic 
+                        Horizontal Directional Drilling (HDD) services for state-owned Electricity Distribution company in
+                        Cotonou, Benin Republic
                     </p>
                 </div>
             </div>
@@ -349,7 +352,7 @@
                 <div
                     class="hidden cursor-pointer items-center w-full px-4 justify-center absolute bottom-5 details transition delay-[1]">
                     <p class="text-white bg-[#333333] bg-opacity-80 px-4 py-3 w-full rounded-lg text-xs">
-                        Internal Piping Installation for Data Centre at Oregun, Lagos State. 
+                        Internal Piping Installation for Data Centre at Oregun, Lagos State.
                     </p>
                 </div>
             </div>
